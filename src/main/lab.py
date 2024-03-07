@@ -14,17 +14,18 @@ def count_digits(num):
     num = abs(num)
 
     # Initialize a counter to keep track of the number of digits
-    
+    count = 0
 
     # Handle the case of 0 separately
     if num == 0:
         return 1
 
     # Iterate while the number is not 0
+    while num > 0:
         # Increment the counter for each digit
+        count += 1
         # Remove the last digit by dividing the number by 10
-
-    # Enter you code here   
+        num //= 10
 
     # Return the total count of digits
     return count
